@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2EEEAC38238851E200DBB806 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2EEEAC37238851E200DBB806 /* main.cpp */; };
+		2EEEAC452388523700DBB806 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2EEEAC442388523700DBB806 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,15 +20,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		2EEEAC402388523700DBB806 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2EEEAC34238851E200DBB806 /* C++17 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C++17"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2EEEAC37238851E200DBB806 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2EEEAC422388523700DBB806 /* Structured_bindings */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Structured_bindings; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EEEAC442388523700DBB806 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2EEEAC31238851E200DBB806 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EEEAC3F2388523700DBB806 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +58,7 @@
 		2EEEAC2B238851E200DBB806 = {
 			isa = PBXGroup;
 			children = (
-				2EEEAC36238851E200DBB806 /* C++17 */,
+				2EEEAC432388523700DBB806 /* Structured_bindings */,
 				2EEEAC35238851E200DBB806 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,16 +67,17 @@
 			isa = PBXGroup;
 			children = (
 				2EEEAC34238851E200DBB806 /* C++17 */,
+				2EEEAC422388523700DBB806 /* Structured_bindings */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2EEEAC36238851E200DBB806 /* C++17 */ = {
+		2EEEAC432388523700DBB806 /* Structured_bindings */ = {
 			isa = PBXGroup;
 			children = (
-				2EEEAC37238851E200DBB806 /* main.cpp */,
+				2EEEAC442388523700DBB806 /* main.cpp */,
 			);
-			path = "C++17";
+			path = Structured_bindings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +100,23 @@
 			productReference = 2EEEAC34238851E200DBB806 /* C++17 */;
 			productType = "com.apple.product-type.tool";
 		};
+		2EEEAC412388523700DBB806 /* Structured_bindings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EEEAC462388523700DBB806 /* Build configuration list for PBXNativeTarget "Structured_bindings" */;
+			buildPhases = (
+				2EEEAC3E2388523700DBB806 /* Sources */,
+				2EEEAC3F2388523700DBB806 /* Frameworks */,
+				2EEEAC402388523700DBB806 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Structured_bindings;
+			productName = Structured_bindings;
+			productReference = 2EEEAC422388523700DBB806 /* Structured_bindings */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +127,9 @@
 				ORGANIZATIONNAME = Ishiguro;
 				TargetAttributes = {
 					2EEEAC33238851E200DBB806 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					2EEEAC412388523700DBB806 = {
 						CreatedOnToolsVersion = 11.1;
 					};
 				};
@@ -110,6 +148,7 @@
 			projectRoot = "";
 			targets = (
 				2EEEAC33238851E200DBB806 /* C++17 */,
+				2EEEAC412388523700DBB806 /* Structured_bindings */,
 			);
 		};
 /* End PBXProject section */
@@ -119,7 +158,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EEEAC38238851E200DBB806 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EEEAC3E2388523700DBB806 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EEEAC452388523700DBB806 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +178,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -190,7 +236,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -255,6 +301,26 @@
 			};
 			name = Release;
 		};
+		2EEEAC472388523700DBB806 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DRJ524RK9D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2EEEAC482388523700DBB806 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DRJ524RK9D;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -272,6 +338,15 @@
 			buildConfigurations = (
 				2EEEAC3C238851E200DBB806 /* Debug */,
 				2EEEAC3D238851E200DBB806 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EEEAC462388523700DBB806 /* Build configuration list for PBXNativeTarget "Structured_bindings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EEEAC472388523700DBB806 /* Debug */,
+				2EEEAC482388523700DBB806 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
